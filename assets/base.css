@@ -1,93 +1,41 @@
 :root {
-	--main-color: hsl(0, 0%, 97%);
-	--secondary-color: hsl(252, 100%, 96%);
-	--accent-color: hsl(252, 100%, 71%);
+	--primary-color: ;
+	--secondary-color: ;
+	--accent-color: ;
 }
 
 
 
-/* CSS for all screens and smartphones */
+/* ---------------------
+-- CSS FOR DARK THEME --
+--------------------- */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary-color: ;
+		--secondary-color: ;
+		--accent-color: ;
+	}
+}
 
+
+
+/* --------------------------------------
+-- CSS FOR ALL AND SMARTPHONES SCREENS --
+-------------------------------------- */
 body {
-	background-color: var(--main-color);
-}
-
-header {
-	background-color: #DADADA; /*temporaire*/
-	height: 55px;
-	width: 100%;
-	position: fixed;
-	text-align: center; /*temporaire*/
-}
-
-.blue {
-	background-color: var(--secondary-color);
-}
-
-#progress {
-	background-color: var(--accent-color);
-	height: 4px;
-	width: 0;
-	border-radius: 0 4px 4px 0;
-	top: 51px;
-	position: fixed;
-}
-
-footer {
-	background-color: #353535;
-	color: var(--main-color);
-	padding: 15px 10% 30px;
-	width: 80%;
-	bottom: 0;
+	background-color: var(--primary-color);
 }
 
 
 
-/* CSS for tablets */
+/* --------------------------
+-- CSS FOR TABLETS SCREENS --
+-------------------------- */
 @media screen and (min-width:501px) and (max-width:959px) {...}
 
 
 
-/* CSS for computers */
-@media screen and (min-width:960px) {
-
-	#projects {
-		display: flex;
-		text-align: center;
-		justify-content: center;
-	}
-
-	.project {
-		background-color: var(--main-color);
-		width: 20%;
-		height: 450px;
-		margin: 25px;
-		border-radius: 60px;
-	}
-
-	.project-image {
-		background-color: var(--accent-color);
-		width: 100%;
-		height: 65%;
-		border-radius: 60px 60px 0 50px;
-	}
-
-	.project-background-corner {
-		background-color: var(--accent-color);
-		width: 50px;
-		height: 50px;
-		position: absolute;
-		margin: left;
-	}
-
-	.project-corner {
-		background-color: var(--main-color);
-		width: 50px;
-		height: 50px;
-		border-top-right-radius: 100%;
-		position: absolute;
-		z-index: 1;
-		margin: left;
-	}
-
-}
+/* --------------------------
+-- CSS FOR DESKTOP SCREENS --
+-------------------------- */
+@media screen and (min-width:960px) {...}
