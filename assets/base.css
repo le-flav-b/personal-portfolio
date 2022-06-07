@@ -1,7 +1,24 @@
 :root {
-	--primary-color: ;
-	--secondary-color: ;
-	--accent-color: ;
+
+	/* ======== COLORS ======== */
+
+	/* general color */
+	--hue-color: 240;
+
+	/* background colors */
+	--primary-color: hsl(0, 0%, 98%);
+	--secondary-color: hsl(var(--hue-color), 80%, 90%);
+
+	/* element colors */
+	--accent-color: hsl(var(--hue-color), 85%, 75%);
+	--details-color: hsl(var(--hue-color), 71%, 67%);
+
+	/* text colors */
+	--title-color: hsl(0, 0%, 10%);
+	--secondary-title-color: hsl(0, 0%, 20%);
+	--text-color: hsl(0, 0%, 35%);
+	--detail-text-color: hsl(0, 0%, 85%);
+	--text-on-element-color: var(--primary-color);
 }
 
 
@@ -11,9 +28,17 @@
 --------------------- */
 @media (prefers-color-scheme: dark) {
 	:root {
-		--primary-color: ;
-		--secondary-color: ;
-		--accent-color: ;
+
+		/* background colors */
+		--primary-color: hsl(245, 4%, 18%);
+		--secondary-color: hsl(var(--hue-color), 20%, 35%);
+
+		/* text colors */
+		--title-color: hsl(0, 0%, 90%);
+		--secondary-title-color: hsl(0, 0%, 80%);
+		--text-color: hsl(0, 0%, 65%);
+		--detail-text-color: hsl(0, 0%, 30%);
+		--text-on-element-color: var(--primary-color);
 	}
 }
 
