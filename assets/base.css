@@ -23,9 +23,11 @@
 
 
 
+
 /* ---------------------
 -- CSS FOR DARK THEME --
 --------------------- */
+
 @media (prefers-color-scheme: dark) {
 	:root {
 
@@ -44,23 +46,29 @@
 
 
 
+
 /* --------------------------------------
 -- CSS FOR ALL AND SMARTPHONES SCREENS --
 -------------------------------------- */
+
 body {
 	background-color: var(--primary-color);
 }
 
 
 
+
 /* --------------------------
 -- CSS FOR TABLETS SCREENS --
 -------------------------- */
+
 @media screen and (min-width:501px) and (max-width:959px) {...}
+
 
 
 
 /* --------------------------
 -- CSS FOR DESKTOP SCREENS --
 -------------------------- */
+
 @media screen and (min-width:960px) {...}
